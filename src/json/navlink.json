@@ -1,0 +1,11 @@
+[
+    { "to": "/", "text": "About me" },
+    { "to": "/Work", "text": "Work" },
+    { "to": "/Expertise", "text": "Expertise" },
+    { "to": "/Studio", "text": "Studio" },
+    { "to": "/Blog", "text": "Blog" },
+    { "to": "/Services", "text": "Services" },
+    { "to": "/Testimonials", "text": "Testimonials" },
+    { "to": "/Contact", "text": "Contact" }
+  ]
+  
