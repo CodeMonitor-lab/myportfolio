@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "title": "Role Based Access Control (RBAC)",
+      "image": "/works.jpg",
+      "category": "Security",
+      "description": "Authentication & Authorization using MERN stack."
+    },
+    {
+      "id": 2,
+      "title": "Blend-Bloom Blog Web",
+      "image": "/works.jpg",
+      "category": "Blog Platform",
+      "description": "Modern SEO optimized blog built with Next.js."
+    },
+    {
+      "id": 3,
+      "title": "Admin Dashboard",
+      "image": "/works.jpg",
+      "category": "Dashboard",
+      "description": "Analytics dashboard with role management."
+    },
+    {
+      "id": 4,
+      "title": "E-Commerce Platform",
+      "image": "/works.jpg",
+      "category": "Ecommerce",
+      "description": "Full stack shopping experience."
+    },
+    {
+      "id": 5,
+      "title": "Portfolio Website",
+      "image": "/works.jpg",
+      "category": "Personal",
+      "description": "Animated portfolio with modern UI."
+    },
+    {
+      "id": 6,
+      "title": "Chat Application",
+      "image": "/works.jpg",
+      "category": "Realtime",
+      "description": "Socket.io based real-time chat."
+    }
+  ]
+  
