@@ -20,13 +20,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en"suppressHydrationWarning >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
         <Header />
 
-        <main className="flex-1">
+        <main className="bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
           {children}
         </main>
 

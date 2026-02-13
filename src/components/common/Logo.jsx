@@ -1,18 +1,25 @@
-import React from "react";
-import { LayoutPanelLeft,Bug } from "lucide-react";
+"use client";
 
+import Link from "next/link";
+import { motion } from "framer-motion";
 
-
-const Logo = () => {
+export default function Logo() {
   return (
-    <div>
-      <p className="flex text-red-900 items-center gap-1 pr-3 ">
-        <span className="border-2 rounded-full px-1 py-1" >
-          <Bug size={26} />
-        </span>
-      </p>
-    </div>
-  );
-};
+    <Link href="/" className="flex items-center gap-2 select-none">
+      <motion.div
+        whileHover={{ scale: 1.08 }}
+        transition={{ type: "spring", stiffness: 300 }}
+        className="w-9 h-9 rounded-xl bg-gradient-to-br from-purple-600 to-pink-500 flex items-center justify-center text-white font-bold shadow-md"
+      >
+        8
+      </motion.div>
 
-export default Logo;
+      <motion.span
+        whileHover={{ x: 2 }}
+        className="text-lg font-semibold tracking-tight bg-gradient-to-r from-purple-800 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent"
+      >
+        fx
+      </motion.span>
+    </Link>
+  );
+}

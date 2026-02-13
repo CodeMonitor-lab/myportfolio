@@ -1,20 +1,41 @@
-import { LayoutPanelLeft, LayoutGrid } from "lucide-react";
+"use client";
 
-const MenuBar = ({ isOpen, toggle, className = "" }) => {
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import navLinks from "@/json/navlink.json";
+
+export default function MenuBar() {
+  const pathname = usePathname();
+
   return (
-    <button
-      onClick={toggle}
-      aria-label="Toggle Menu"
-      aria-expanded={isOpen}
-      className={`transition-all duration-200 hover:scale-110 ${className}`}
-    >
-      {isOpen ? (
-        <LayoutPanelLeft size={28} className="text-red-600" />
-      ) : (
-        <LayoutGrid size={28} className="text-purple-600" />
-      )}
-    </button>
-  );
-};
+    <div className="hidden md:flex items-center gap-8">
+      {navLinks.map((link) => {
+        const isActive = pathname === link.to;
 
-export default MenuBar;
+        return (
+          <Link
+            key={link.to}
+            href={link.to}
+            className="relative text-sm font-medium group"
+          >
+            <span
+              className={`transition-colors duration-300 ${
+                isActive
+                  ? "text-purple-600 dark:text-purple-400"
+                  : "text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white"
+              }`}
+            >
+              {link.text}
+            </span>
+
+            <span
+              className={`absolute left-0 -bottom-1 h-0.5 bg-purple-500 transition-all duration-300 ${
+                isActive ? "w-full" : "w-0 group-hover:w-full"
+              }`}
+            />
+          </Link>
+        );
+      })}
+    </div>
+  );
+}

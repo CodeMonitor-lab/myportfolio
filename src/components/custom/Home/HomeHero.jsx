@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import next from "next/image";
+import Link from "next/link";
 
 export default function App() {
   // Animation variants
@@ -85,7 +86,8 @@ export default function App() {
               whileTap={{ scale: 0.95 }}
               className="group flex items-center justify-center gap-3 bg-gradient-to-r from-indigo-600 to-purple-700 text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/40 transition-all duration-300"
             >
-              View My Work
+              <Link href='/Work' >View My Work</Link>
+              
               <span className="text-xl transition-transform duration-300 group-hover:translate-x-1">→</span>
             </motion.button>
             <motion.button
@@ -93,7 +95,7 @@ export default function App() {
               whileTap={{ scale: 0.95 }}
               className="flex items-center justify-center gap-3 bg-slate-800/50 border border-slate-700 text-white px-8 py-4 rounded-xl font-bold hover:border-indigo-700 transition-all duration-300"
             >
-              Contact Me
+              <Link href='/Contact' >Contact Me</Link>
             </motion.button>
           </motion.div>
 

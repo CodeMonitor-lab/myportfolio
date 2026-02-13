@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import test from "@/json/HeroBannerData.json";
+import { Reply } from "lucide-react";
 
 const HeroBanner = () => {
   // Animation variants
