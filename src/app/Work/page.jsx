@@ -1,21 +1,14 @@
 'use client';
 
 import React, { useState } from "react";
-import OurWork from "@/components/custom/Work/OurWork";
-import WorkPagination from "@/components/custom/Work/WorkPagination";
+import OurWork from "@/components/ui/Work/OurWork";
 
 const Page = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   return (
     <main className="min-h-screen">
-      <OurWork currentPage={currentPage} />
-      
-      <WorkPagination
-        totalPages={6}
-        currentPage={currentPage}
-        onPageChange={setCurrentPage}
-      />
+      <OurWork/>
     </main>
   );
 };

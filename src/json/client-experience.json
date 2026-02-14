@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "quote": "Their technical expertise transformed our outdated platform into a modern, scalable application that handles 10x our previous traffic. The clean codebase made future development seamless.",
+      "author": "Jamie Wilson",
+      "role": "CTO, GrowthLabs",
+      "image": "https://placehold.co/80x80.png?text=JW"
+    },
+    {
+      "id": 2,
+      "quote": "Working with them was a game-changer for our startup. They delivered a complex SaaS platform ahead of schedule while maintaining exceptional code quality and documentation.",
+      "author": "Taylor Reed",
+      "role": "Founder, StartupFlow",
+      "image": "https://placehold.co/80x80.png?text=TR"
+    },
+    {
+      "id": 3,
+      "quote": "Their performance optimization work reduced our page load time by 3.2 seconds and increased conversions by 27%. Worth every penny for the ROI we saw.",
+      "author": "Morgan Chen",
+      "role": "Product Lead, EcomPlus",
+      "image": "https://placehold.co/80x80.png?text=MC"
+    }
+  ]
+  

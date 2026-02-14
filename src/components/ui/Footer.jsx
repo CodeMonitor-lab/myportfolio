@@ -50,7 +50,8 @@ export default function App() {
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             <a href="/privacy" className="text-purple-300 hover:text-white transition-colors">Privacy Policy</a>
             <a href="/terms" className="text-purple-300 hover:text-white transition-colors">Terms of Service</a>
-            <a href="/contact" className="text-purple-300 hover:text-white transition-colors">Contact</a>
+            <a href="/Services" className="text-purple-300 hover:text-white transition-colors">Services</a>
+            <a href="/Contact" className="text-purple-300 hover:text-white transition-colors">Contact</a>
           </div>
         </div>
       </footer>

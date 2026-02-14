@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "title": "Nexus Dashboard",
+      "description": "A real-time analytics platform with interactive data visualizations and customizable widgets for enterprise clients.",
+      "technologies": ["React", "TypeScript", "TailwindCSS", "Recharts"],
+      "image": "https://placehold.co/600x400.png?text=Nexus+Dashboard",
+      "liveUrl": "#",
+      "codeUrl": "#"
+    },
+    {
+      "id": 2,
+      "title": "Aura Design System",
+      "description": "Comprehensive UI component library with dark mode support, accessibility features, and theming capabilities.",
+      "technologies": ["React", "Framer Motion", "Storybook", "CSS Modules"],
+      "image": "https://placehold.co/600x400.png?text=Aura+Design+System",
+      "liveUrl": "#",
+      "codeUrl": "#"
+    },
+    {
+      "id": 3,
+      "title": "Quantum CLI",
+      "description": "Developer productivity tool with intelligent code generation, project scaffolding, and automated testing workflows.",
+      "technologies": ["Node.js", "TypeScript", "Inquirer.js", "Chalk"],
+      "image": "https://placehold.co/600x400.png?text=Quantum+CLI",
+      "liveUrl": "#",
+      "codeUrl": "#"
+    },
+    {
+      "id": 4,
+      "title": "Stellar CMS",
+      "description": "Headless content management system with real-time collaboration, version control, and GraphQL API integration.",
+      "technologies": ["Next.js", "Prisma", "PostgreSQL", "GraphQL"],
+      "image": "https://placehold.co/600x400.png?text=Stellar+CMS",
+      "liveUrl": "#",
+      "codeUrl": "#"
+    },
+    {
+      "id": 5,
+      "title": "Vortex 3D Engine",
+      "description": "WebGL-powered rendering engine for interactive product visualizations and immersive brand experiences.",
+      "technologies": ["Three.js", "React Three Fiber", "GLSL", "Drei"],
+      "image": "https://placehold.co/600x400.png?text=Vortex+3D+Engine",
+      "liveUrl": "#",
+      "codeUrl": "#"
+    },
+    {
+      "id": 6,
+      "title": "Pulse Monitoring",
+      "description": "Infrastructure monitoring solution with anomaly detection, alerting system, and performance analytics dashboard.",
+      "technologies": ["React", "D3.js", "WebSockets", "Node.js"],
+      "image": "https://placehold.co/600x400.png?text=Pulse+Monitoring",
+      "liveUrl": "#",
+      "codeUrl": "#"
+    }
+  ]
+  

@@ -1,0 +1,81 @@
+[
+    {
+      "id": 1,
+      "title": "Custom Web Applications",
+      "description": "Building responsive, high-performance web applications with modern frameworks and clean architecture.",
+      "icon": "🌐",
+      "features": [
+        "React/TypeScript Development",
+        "Progressive Web Apps (PWA)",
+        "Real-time Features & WebSockets",
+        "API Integration & Microservices"
+      ],
+      "startingAt": "$5,000"
+    },
+    {
+      "id": 2,
+      "title": "UI/UX Implementation",
+      "description": "Transforming designs into pixel-perfect, accessible interfaces with smooth animations and interactions.",
+      "icon": "🎨",
+      "features": [
+        "Figma to Code Conversion",
+        "Design System Development",
+        "Micro-interactions & Animations",
+        "WCAG 2.1 Accessibility Compliance"
+      ],
+      "startingAt": "$3,500"
+    },
+    {
+      "id": 3,
+      "title": "Performance Optimization",
+      "description": "Auditing and enhancing application speed, SEO, and user experience through technical refinements.",
+      "icon": "⚡",
+      "features": [
+        "Core Web Vitals Improvement",
+        "Bundle Size Optimization",
+        "Lazy Loading Strategies",
+        "Image & Asset Optimization"
+      ],
+      "startingAt": "$2,500"
+    },
+    {
+      "id": 4,
+      "title": "Technical Consulting",
+      "description": "Strategic guidance on architecture, tooling, and best practices for engineering teams and startups.",
+      "icon": "💡",
+      "features": [
+        "Codebase Audits & Reviews",
+        "Architecture Planning",
+        "Team Mentorship",
+        "Technology Stack Selection"
+      ],
+      "startingAt": "$150/hr"
+    },
+    {
+      "id": 5,
+      "title": "3D & Interactive Experiences",
+      "description": "Creating immersive brand experiences with WebGL, Three.js, and interactive 3D visualizations.",
+      "icon": "🎮",
+      "features": [
+        "Product Visualizations",
+        "Interactive Data Experiences",
+        "WebGL Animations",
+        "Custom Shaders & Effects"
+      ],
+      "startingAt": "$7,000"
+    },
+    {
+      "id": 6,
+      "title": "DevOps & Deployment",
+      "description": "Setting up robust infrastructure, CI/CD pipelines, and monitoring for reliable application delivery.",
+      "icon": "🚀",
+      "features": [
+        "Docker & Containerization",
+        "Cloud Infrastructure (AWS/Azure)",
+        "CI/CD Pipeline Setup",
+        "Performance Monitoring & Alerts"
+      ],
+      "startingAt": "$3,000"
+    }
+  ]
+  

@@ -1,0 +1,28 @@
+[
+    {
+      "step": "01",
+      "title": "Discovery Call",
+      "description": "Free 30-minute consultation to understand your project goals, timeline, and technical requirements."
+    },
+    {
+      "step": "02",
+      "title": "Proposal & Scope",
+      "description": "Detailed project proposal with timeline, deliverables, and transparent pricing tailored to your needs."
+    },
+    {
+      "step": "03",
+      "title": "Kickoff & Planning",
+      "description": "Project kickoff meeting, technical planning, and establishing communication channels and milestones."
+    },
+    {
+      "step": "04",
+      "title": "Development & Review",
+      "description": "Agile development cycles with regular progress updates and opportunities for feedback."
+    },
+    {
+      "step": "05",
+      "title": "Delivery & Support",
+      "description": "Final delivery with documentation, training, and optional ongoing maintenance packages."
+    }
+  ]
+  
