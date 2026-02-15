@@ -1,0 +1,27 @@
+[
+    {
+      "question": "What development services do you offer?",
+      "answer": "I specialize in full-stack web development, mobile app development, UI/UX design, API integration, and performance optimization. My expertise includes React, Node.js, TypeScript, and modern cloud infrastructure."
+    },
+    {
+      "question": "How do you handle project timelines and deadlines?",
+      "answer": "I use agile methodologies with 1-2 week sprints, providing regular progress updates and demos. All projects include detailed timelines with milestone checkpoints, and I maintain transparent communication through weekly status reports and available collaboration tools."
+    },
+    {
+      "question": "What is your approach to responsive design?",
+      "answer": "I implement a mobile-first approach using modern CSS techniques (Flexbox, Grid) and responsive frameworks. All projects undergo rigorous testing across multiple devices and screen sizes to ensure seamless user experiences on desktop, tablet, and mobile platforms."
+    },
+    {
+      "question": "Do you provide maintenance and support after project completion?",
+      "answer": "Yes, I offer flexible post-launch support packages including bug fixes, performance monitoring, security updates, and feature enhancements. All projects include a 30-day warranty period for critical fixes, with optional ongoing maintenance plans available."
+    },
+    {
+      "question": "How do you ensure code quality and security?",
+      "answer": "I follow industry best practices including comprehensive testing (unit, integration, E2E), code reviews, static analysis, and CI/CD pipelines. Security is prioritized through regular dependency audits, input validation, secure authentication practices, and adherence to OWASP guidelines."
+    },
+    {
+      "question": "What information do you need to start a project?",
+      "answer": "I begin with a discovery phase to understand your business goals, target audience, and technical requirements. Please prepare any existing brand guidelines, competitor references, user stories, and specific functionality requirements to accelerate the kickoff process."
+    }
+  ]
+  

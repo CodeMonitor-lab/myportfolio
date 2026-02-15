@@ -2,7 +2,6 @@
     { "to": "/", "text": "About me" },
     { "to": "/Services", "text": "Services" },
     { "to": "/Studio", "text": "Studio" },
-    { "to": "/Expertise", "text": "Expertise" },
     { "to": "/Blog", "text": "Blog" }
   ]
   

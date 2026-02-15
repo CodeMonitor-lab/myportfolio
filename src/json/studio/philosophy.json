@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "title": "Strategic Foundation",
+      "description": "Every brand begins with deep research and strategic positioning to ensure authentic market resonance.",
+      "icon": "🎯"
+    },
+    {
+      "id": 2,
+      "title": "Visual Identity Crafting",
+      "description": "Meticulously designed logos, color systems, and typography that communicate your unique value proposition.",
+      "icon": "🎨"
+    },
+    {
+      "id": 3,
+      "title": "Technical Integration",
+      "description": "Seamless implementation across digital platforms with developer-friendly brand assets and documentation.",
+      "icon": "💻"
+    }
+  ]
+  

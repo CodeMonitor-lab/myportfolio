@@ -1,0 +1,7 @@
+export {default as BrandStudio} from './BrandStudio'
+export {default as Brandphilosophy} from './Brandphilosophy'
+export {default as BrandServices} from './BrandServices'
+export {default as BrandPortfolio} from './BrandPortfolio'
+export {default as BrandProcess} from './BrandProcess'
+export {default as BrandPerspective} from './BrandPerspective'
+export {default as CTA} from './CTA'

@@ -2,7 +2,14 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import {Facebook,Github,Instagram,Twitter,Linkedin,Panda} from 'lucide-react'
+import {
+  Facebook,
+  Github,
+  Instagram,
+  Twitter,
+  Linkedin,
+  Send,
+} from "lucide-react";
 
 const ProfessionalLinks = () => {
   const containerVariants = {
@@ -14,56 +21,71 @@ const ProfessionalLinks = () => {
   };
 
   const itemVariants = {
-    hidden: { y: 18, opacity: 0 },
+    hidden: { y: 20, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
-      transition: { type: "spring", damping: 14, stiffness: 90 },
+      transition: { type: "spring", damping: 16, stiffness: 100 },
     },
   };
 
   const links = [
-      { name: "Twitter", url: "https://twitter.com/yourusername",icon:<Twitter /> },
-      { name: "Facebook", url: "https://twitter.com/yourusername",icon:<Facebook /> },
-      { name: "Instagram", url: "https://twitter.com/yourusername",icon:<Instagram /> },
-      { name: "Discord", url: "https://twitter.com/yourusername",icon:<Panda /> },
-      { name: "GitHub", url: "https://github.com/yourusername",icon:<Github /> },
-      { name: "LinkedIn", url: "https://linkedin.com/in/yourusername",icon:<Linkedin /> },
+    { name: "GitHub", url: "https://github.com/yourusername", icon: Github },
+    { name: "LinkedIn", url: "https://linkedin.com/in/yourusername", icon: Linkedin },
+    { name: "Teligram", url: "https://facebook.com/yourusername", icon: Send },
+    { name: "Instagram", url: "https://instagram.com/yourusername", icon: Instagram },
+    { name: "Twitter", url: "https://twitter.com/yourusername", icon: Twitter },
+    { name: "Facebook", url: "https://facebook.com/yourusername", icon: Facebook },
+
   ];
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+    <section className="max-w-6xl mx-auto px-6 pt-20">
       <motion.div
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
+        className="text-center"
       >
         <motion.h2
           variants={itemVariants}
-          className="text-2xl md:text-3xl font-semibold mb-8 text-center"
+          className="text-3xl md:text-4xl font-semibold tracking-tight text-white mb-12"
         >
           Connect With Me
         </motion.h2>
 
         <div className="flex flex-wrap justify-center gap-6">
-          {links.map((platform, index) => (
-            <motion.a
-              key={index}
-              href={platform.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              variants={itemVariants}
-              whileHover={{ y: -4, scale: 1.03 }}
-              whileTap={{ scale: 0.98 }}
-              className="px-6 py-3 bg-slate-900/60 backdrop-blur-lg border border-slate-800 rounded-2xl 
-                         hover:border-indigo-500 hover:shadow-lg hover:shadow-indigo-500/20 
-                         transition-all duration-300 text-sm font-medium"
-            >
-              {platform.name}
-            </motion.a>
-          ))}
-          
+          {links.map((platform, index) => {
+            const Icon = platform.icon;
+
+            return (
+              <motion.a
+                key={index}
+                href={platform.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                variants={itemVariants}
+                whileHover={{ y: -6 }}
+                whileTap={{ scale: 0.97 }}
+                className="group flex items-center gap-3 px-6 py-3
+                           rounded-2xl border border-slate-800
+                           bg-slate-900/60 backdrop-blur-xl
+                           transition-all duration-300
+                           hover:border-indigo-500
+                           hover:shadow-lg hover:shadow-indigo-500/20"
+              >
+                <Icon
+                  size={18}
+                  className="text-slate-400 group-hover:text-indigo-400 transition-colors duration-300"
+                />
+
+                <span className="text-sm font-medium text-slate-300 group-hover:text-white transition-colors duration-300">
+                  {platform.name}
+                </span>
+              </motion.a>
+            );
+          })}
         </div>
       </motion.div>
     </section>

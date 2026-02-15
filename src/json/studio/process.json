@@ -1,0 +1,28 @@
+[
+    {
+      "step": "01",
+      "title": "Discovery",
+      "description": "Deep dive into your business goals, audience, and competitive landscape"
+    },
+    {
+      "step": "02",
+      "title": "Strategy",
+      "description": "Develop brand positioning, architecture, and core messaging framework"
+    },
+    {
+      "step": "03",
+      "title": "Design",
+      "description": "Create visual identity system with multiple concepts and refinements"
+    },
+    {
+      "step": "04",
+      "title": "Implementation",
+      "description": "Build technical assets and integrate brand across digital touchpoints"
+    },
+    {
+      "step": "05",
+      "title": "Evolution",
+      "description": "Ongoing refinement and brand system expansion as your business grows"
+    }
+  ]
+  

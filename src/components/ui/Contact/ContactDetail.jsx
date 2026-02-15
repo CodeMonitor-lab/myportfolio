@@ -1,61 +1,107 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Mail, Handshake, Headset } from "lucide-react";
 
 const ContactDetail = () => {
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: { y: 0, opacity: 1 },
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: { staggerChildren: 0.15 },
+    },
   };
+
+  const itemVariants = {
+    hidden: { y: 24, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { type: "spring", stiffness: 100, damping: 16 },
+    },
+  };
+
+  const details = [
+    {
+      title: "Email",
+      content: "developer@example.com",
+      link: "mailto:developer@example.com",
+      icon: Mail,
+    },
+    {
+      title: "Availability",
+      content: "Open to freelance & full-time opportunities",
+      icon: Handshake,
+    },
+    {
+      title: "Response Time",
+      content: "Usually within 24–48 hours",
+      icon: Headset,
+    },
+  ];
 
   return (
     <motion.div
+      variants={containerVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ staggerChildren: 0.15 }}
-      className="space-y-10"
+      className="space-y-12"
     >
-      {/* Contact Details */}
+      {/* Heading */}
       <div>
-        <h2 className="text-2xl font-bold mb-6">Contact Details</h2>
+        <h2 className="text-3xl font-semibold tracking-tight text-white mb-8">
+          Contact Details
+        </h2>
 
-        <div className="space-y-5">
-          {[
-            {
-              title: "Email",
-              content: "developer@example.com",
-              link: "mailto:developer@example.com",
-            },
-            {
-              title: "Availability",
-              content: "Open to freelance & full-time opportunities",
-            },
-            {
-              title: "Response Time",
-              content: "Usually within 24-48 hours",
-            },
-          ].map((item, index) => (
-            <motion.div
-              key={index}
-              variants={itemVariants}
-              className="p-4 bg-slate-900/50 border border-slate-800 rounded-xl"
-            >
-              <h3 className="font-semibold mb-1">{item.title}</h3>
-              {item.link ? (
-                <a href={item.link} className="text-indigo-400">
-                  {item.content}
-                </a>
-              ) : (
-                <p className="text-slate-400">{item.content}</p>
-              )}
-            </motion.div>
-          ))}
+        {/* Cards */}
+        <div className="space-y-6">
+          {details.map((item, index) => {
+            const Icon = item.icon;
+
+            return (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                whileHover={{ y: -4 }}
+                className="group flex items-start gap-4 p-5
+                           rounded-2xl border border-slate-800
+                           bg-slate-900/60 backdrop-blur-xl
+                           transition-all duration-300
+                           hover:border-indigo-500
+                           hover:shadow-lg hover:shadow-indigo-500/10"
+              >
+                {/* Icon */}
+                <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-slate-800/60 group-hover:bg-indigo-500/10 transition-colors duration-300">
+                  <Icon
+                    size={18}
+                    className="text-slate-400 group-hover:text-indigo-400 transition-colors duration-300"
+                  />
+                </div>
+
+                {/* Content */}
+                <div className="space-y-1">
+                  <h3 className="text-sm font-semibold text-white">
+                    {item.title}
+                  </h3>
+
+                  {item.link ? (
+                    <a
+                      href={item.link}
+                      className="text-sm text-slate-400 hover:text-indigo-400 transition-colors duration-300"
+                    >
+                      {item.content}
+                    </a>
+                  ) : (
+                    <p className="text-sm text-slate-400">
+                      {item.content}
+                    </p>
+                  )}
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
-
-      {/* Social Links */}
-
     </motion.div>
   );
 };

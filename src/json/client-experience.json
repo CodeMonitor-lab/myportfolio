@@ -1,24 +1,23 @@
 [
-    {
-      "id": 1,
-      "quote": "Their technical expertise transformed our outdated platform into a modern, scalable application that handles 10x our previous traffic. The clean codebase made future development seamless.",
-      "author": "Jamie Wilson",
-      "role": "CTO, GrowthLabs",
-      "image": "https://placehold.co/80x80.png?text=JW"
-    },
-    {
-      "id": 2,
-      "quote": "Working with them was a game-changer for our startup. They delivered a complex SaaS platform ahead of schedule while maintaining exceptional code quality and documentation.",
-      "author": "Taylor Reed",
-      "role": "Founder, StartupFlow",
-      "image": "https://placehold.co/80x80.png?text=TR"
-    },
-    {
-      "id": 3,
-      "quote": "Their performance optimization work reduced our page load time by 3.2 seconds and increased conversions by 27%. Worth every penny for the ROI we saw.",
-      "author": "Morgan Chen",
-      "role": "Product Lead, EcomPlus",
-      "image": "https://placehold.co/80x80.png?text=MC"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "author": "Eric Reynolds",
+    "role": "Startup Founder",
+    "quote": "Johny delivered exceptional quality and performance.",
+    "image": "https://i.pravatar.cc/150?img=12"
+  },
+  {
+    "id": 2,
+    "author": "Sophia Martinez",
+    "role": "Product Manager",
+    "quote": "Professional, fast, and highly skilled developer.",
+    "image": "https://i.pravatar.cc/150?img=32"
+  },
+  {
+    "id": 3,
+    "author": "Daniel Lee",
+    "role": "CTO",
+    "quote": "Clean code and excellent communication.",
+    "image": "https://i.pravatar.cc/150?img=45"
+  }
+]

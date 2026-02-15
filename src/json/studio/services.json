@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "title": "Brand Strategy",
+      "description": "Market analysis, positioning, messaging architecture, and brand voice development",
+      "deliverables": [
+        "Brand Guidelines",
+        "Messaging Framework",
+        "Competitor Analysis"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Visual Identity",
+      "description": "Logo systems, color palettes, typography, iconography, and visual language development",
+      "deliverables": [
+        "Primary & Secondary Logos",
+        "Brand Style Guide",
+        "UI Component Library"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Digital Implementation",
+      "description": "Developer handoff packages, design systems, and technical brand integration",
+      "deliverables": [
+        "Figma Design System",
+        "CSS/SCSS Variables",
+        "React Component Library"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Brand Experience",
+      "description": "Motion design, interactive elements, and immersive brand storytelling",
+      "deliverables": [
+        "Animation Guidelines",
+        "Micro-interactions",
+        "3D Brand Elements"
+      ]
+    }
+  ]
+  

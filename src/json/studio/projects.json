@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "name": "Nebula Finance",
+      "industry": "Fintech",
+      "description": "Complete brand identity system with dark mode UI components and motion design",
+      "image": "https://placehold.co/600x400/1e293b/64748b?text=Nebula+Finance"
+    },
+    {
+      "id": 2,
+      "name": "Aura Wellness",
+      "industry": "Health & Wellness",
+      "description": "Minimalist brand identity with organic shapes and calming color palette",
+      "image": "https://placehold.co/600x400/1e293b/64748b?text=Aura+Wellness"
+    },
+    {
+      "id": 3,
+      "name": "Vertex Labs",
+      "industry": "SaaS",
+      "description": "Tech-forward brand system with geometric patterns and interactive elements",
+      "image": "https://placehold.co/600x400/1e293b/64748b?text=Vertex+Labs"
+    },
+    {
+      "id": 4,
+      "name": "Bloom E-commerce",
+      "industry": "Retail",
+      "description": "Vibrant brand identity with custom illustrations and animated components",
+      "image": "https://placehold.co/600x400/1e293b/64748b?text=Bloom+E-commerce"
+    }
+  ]
+  
