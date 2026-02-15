@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "title": "The Art of Clean Code Architecture",
+      "excerpt": "Exploring principles of maintainable codebases, modular design patterns, and how thoughtful architecture impacts long-term project success.",
+      "date": "February 10, 2026",
+      "readTime": "8 min read",
+      "tags": ["Engineering", "Best Practices", "Architecture"],
+      "image": "https://placehold.co/600x400/1e293b/64748b?text=Clean+Code",
+      "author": "Alex Rivera"
+    },
+    {
+      "id": 2,
+      "title": "Design Systems: Bridging Design and Development",
+      "excerpt": "How to create developer-friendly design systems that scale across products while maintaining visual consistency and technical flexibility.",
+      "date": "January 28, 2026",
+      "readTime": "12 min read",
+      "tags": ["Design Systems", "UI/UX", "Collaboration"],
+      "image": "https://placehold.co/600x400/1e293b/64748b?text=Design+Systems",
+      "author": "Maya Chen"
+    },
+    {
+      "id": 3,
+      "title": "Performance Optimization in React Applications",
+      "excerpt": "Advanced techniques for reducing bundle size, optimizing renders, and creating buttery-smooth user experiences in complex React applications.",
+      "date": "January 15, 2026",
+      "readTime": "15 min read",
+      "tags": ["React", "Performance", "JavaScript"],
+      "image": "https://placehold.co/600x400/1e293b/64748b?text=React+Performance",
+      "author": "Jordan Lee"
+    },
+    {
+      "id": 4,
+      "title": "Building Accessible Digital Experiences",
+      "excerpt": "Practical approaches to creating inclusive interfaces that work for everyone, with real-world examples and testing methodologies.",
+      "date": "December 5, 2025",
+      "readTime": "10 min read",
+      "tags": ["Accessibility", "Inclusive Design", "WCAG"],
+      "image": "https://placehold.co/600x400/1e293b/64748b?text=Accessibility",
+      "author": "Sam Taylor"
+    },
+    {
+      "id": 5,
+      "title": "The Future of Web Animation",
+      "excerpt": "Exploring the evolution of web animations from CSS transitions to advanced WebGL experiences and what's next for interactive storytelling.",
+      "date": "November 22, 2025",
+      "readTime": "9 min read",
+      "tags": ["Animation", "WebGL", "User Experience"],
+      "image": "https://placehold.co/600x400/1e293b/64748b?text=Web+Animation",
+      "author": "Riley Kim"
+    },
+    {
+      "id": 6,
+      "title": "Developer Wellness: Avoiding Burnout in Tech",
+      "excerpt": "Strategies for maintaining mental health, setting boundaries, and building sustainable workflows in high-pressure development environments.",
+      "date": "November 8, 2025",
+      "readTime": "7 min read",
+      "tags": ["Career", "Wellness", "Productivity"],
+      "image": "https://placehold.co/600x400/1e293b/64748b?text=Developer+Wellness",
+      "author": "Casey Morgan"
+    }
+  ]
+  
