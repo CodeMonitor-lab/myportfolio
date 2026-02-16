@@ -9,7 +9,13 @@ import {
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-200 font-sans">
+    <main className="
+      min-h-screen font-sans transition-colors duration-300
+      bg-gradient-to-b 
+      from-white via-slate-50 to-white
+      dark:from-slate-900 dark:via-slate-950 dark:to-slate-900
+      text-slate-800 dark:text-slate-200
+    ">
       
       {/* Hero */}
       <section className="relative pb-10">

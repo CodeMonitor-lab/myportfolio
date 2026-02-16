@@ -1,13 +1,14 @@
 'use client';
 
-import React, { useState } from "react";
+import React from "react";
 import OurWork from "@/components/ui/Work/OurWork";
+import { WorkHero } from "@/components/ui/Work";
 
 const Page = () => {
-  const [currentPage, setCurrentPage] = useState(1);
 
   return (
     <main className="min-h-screen">
+      <WorkHero/>
       <OurWork/>
     </main>
   );

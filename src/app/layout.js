@@ -23,7 +23,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
+        className={`
+          ${geistSans.variable} 
+          ${geistMono.variable} 
+          antialiased 
+          min-h-screen 
+          flex 
+          flex-col
+          bg-white text-slate-900
+          dark:bg-slate-950 dark:text-slate-100
+          transition-colors duration-300
+        `}
       >
         <ThemeProvider
           attribute="class"
@@ -33,7 +43,7 @@ export default function RootLayout({ children }) {
         >
           <Header />
 
-          <main className="flex-1 bg-white dark:bg-slate-900 transition-colors duration-300">
+          <main className="flex-1">
             {children}
           </main>
 

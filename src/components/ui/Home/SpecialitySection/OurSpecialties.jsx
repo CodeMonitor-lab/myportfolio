@@ -11,39 +11,69 @@ export default function OurSpecialties({ containerVariants, itemVariants }) {
   ];
 
   return (
-    <motion.div
+    <motion.section
       variants={containerVariants}
       initial="hidden"
-      animate="visible"
-      className="pt-16 border-t border-slate-800/50"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="
+        pt-20  
+        border-slate-200 dark:border-slate-800/50
+      "
     >
-      <motion.h2
-        variants={itemVariants}
-        className="text-center sm:text-left text-2xl font-bold mb-12 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400"
-      >
-        Our Specialties
-      </motion.h2>
-
+      {/* Grid */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {specialties.map((item) => (
           <motion.div
             key={item.id}
             variants={itemVariants}
-            whileHover={{ y: -8 }}
-            className="group relative p-8 bg-slate-900/50 border border-slate-800 rounded-2xl text-center overflow-hidden"
+            whileHover={{ y: -10 }}
+            transition={{ type: "spring", stiffness: 250 }}
+            className="
+              group relative p-8 rounded-2xl text-center overflow-hidden
+              bg-white dark:bg-slate-900/50
+              border border-slate-200 dark:border-slate-800
+              shadow-sm hover:shadow-xl
+              dark:hover:shadow-indigo-500/10
+              transition-all duration-300
+            "
           >
+            {/* Glow hover background */}
+            <div className="
+              absolute inset-0 opacity-0 group-hover:opacity-100
+              bg-gradient-to-br from-indigo-500/5 to-purple-500/5
+              transition-opacity duration-500
+            " />
+
             <div className="relative z-10">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-indigo-900/50 to-purple-900/50 border border-indigo-800/50 flex items-center justify-center text-3xl">
+              {/* Icon */}
+              <div className="
+                w-16 h-16 mx-auto mb-6 rounded-2xl
+                bg-indigo-50 dark:bg-gradient-to-br dark:from-indigo-900/50 dark:to-purple-900/50
+                border border-indigo-200 dark:border-indigo-800/50
+                flex items-center justify-center text-3xl
+              ">
                 {item.icon}
               </div>
-              <h3 className="text-2xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">
+
+              {/* Title */}
+              <h3 className="
+                text-xl md:text-2xl font-semibold mb-3
+                text-slate-800 dark:text-white
+              ">
                 {item.title}
               </h3>
-              <div className="h-1 w-16 mx-auto bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full mt-4" />
+
+              {/* Accent line */}
+              <div className="
+                h-1 w-16 mx-auto rounded-full mt-4
+                bg-gradient-to-r
+                from-indigo-500 to-purple-600
+              " />
             </div>
           </motion.div>
         ))}
       </div>
-    </motion.div>
+    </motion.section>
   );
 }

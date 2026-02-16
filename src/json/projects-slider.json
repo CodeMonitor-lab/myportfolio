@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "title": "Nova E-Commerce",
+      "category": "Full Stack Development",
+      "description": "A high-performance headless e-commerce platform built with Next.js 14 and Shopify Storefront API. Features include optimistic UI updates, server-side caching, and a custom cart engine.",
+      "tags": ["Next.js", "TypeScript", "Tailwind", "Shopify"],
+      "image": "https://image.qwenlm.ai/public_source/7a1e88c7-bfbb-49fb-8b1d-c0e1b0351af9/1c72f6444-c8a0-4d3d-a74b-9bcf9f49e9c7.png",
+      "link": "#",
+      "github": "#"
+    },
+    {
+      "id": 2,
+      "title": "SaaS Analytics Dashboard",
+      "category": "Data Visualization",
+      "description": "Comprehensive analytics dashboard for SaaS metrics. Implements real-time data streaming via WebSockets and interactive D3.js charts for user retention and revenue tracking.",
+      "tags": ["React", "D3.js", "Node.js", "Socket.io"],
+      "image": "https://image.qwenlm.ai/public_source/7a1e88c7-bfbb-49fb-8b1d-c0e1b0351af9/1de39b175-49c8-4519-bd02-cda23ea4eb09.png",
+      "link": "#",
+      "github": "#"
+    },
+    {
+      "id": 3,
+      "title": "Social Connect App",
+      "category": "Mobile Development",
+      "description": "A cross-platform social networking application focusing on local community events. Built with React Native and Firebase, featuring geolocation services and real-time chat.",
+      "tags": ["React Native", "Firebase", "GeoLocation", "Chat"],
+      "image": "https://image.qwenlm.ai/public_source/7a1e88c7-bfbb-49fb-8b1d-c0e1b0351af9/10eb17d6f-a08e-40ac-adb3-d0c29585eb48.png",
+      "link": "#",
+      "github": "#"
+    },
+    {
+      "id": 4,
+      "title": "Creative Portfolio 3D",
+      "category": "Frontend & Design",
+      "description": "An immersive 3D portfolio experience using WebGL. Features interactive product showcases and smooth camera transitions powered by Three.js and React Three Fiber.",
+      "tags": ["Three.js", "R3F", "GSAP", "Blender"],
+      "image": "https://image.qwenlm.ai/public_source/7a1e88c7-bfbb-49fb-8b1d-c0e1b0351af9/16bcf9795-cd21-4dbe-a7cf-4e4d5f507d75.png",
+      "link": "#",
+      "github": "#"
+    },
+    {
+      "id": 5,
+      "title": "FinTech Wallet",
+      "category": "Secure Systems",
+      "description": "A secure digital wallet interface for managing crypto and fiat currencies. Implements biometric authentication simulation and real-time currency conversion APIs.",
+      "tags": ["Vue.js", "Web3.js", "Security", "API Integration"],
+      "image": "https://image.qwenlm.ai/public_source/7a1e88c7-bfbb-49fb-8b1d-c0e1b0351af9/136e2b3c6-479b-4859-ac5e-4661c1ab2069.png",
+      "link": "#",
+      "github": "#"
+    },
+    {
+      "id": 6,
+      "title": "AI Assistant Interface",
+      "category": "AI Integration",
+      "description": "A futuristic chat interface for an LLM-powered assistant. Features streaming text responses, code syntax highlighting, and voice command integration.",
+      "tags": ["React", "OpenAI API", "Web Speech API", "PrismJS"],
+      "image": "https://image.qwenlm.ai/public_source/7a1e88c7-bfbb-49fb-8b1d-c0e1b0351af9/1b319a7bd-1c55-41af-a645-db4892e54f45.png",
+      "link": "#",
+      "github": "#"
+    }
+  ]
+  

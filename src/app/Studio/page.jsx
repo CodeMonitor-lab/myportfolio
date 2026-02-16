@@ -12,25 +12,18 @@ import {
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-slate-200 font-sans">
-      {/* Hero Section */}
+    <div className="min-h-screen font-sans
+      bg-white text-slate-900
+      dark:bg-gradient-to-b dark:from-slate-900 dark:via-slate-950 dark:to-slate-900
+      dark:text-slate-200
+      transition-colors duration-300"
+    >
       <BrandStudio />
-      {/* Philosophy Section */}
       <Brandphilosophy />
-
-      {/* Services Section */}
       <BrandServices />
-
-      {/* Process Section */}
       <BrandProcess />
-
-      {/* Portfolio Section */}
       <BrandPortfolio />
-
-      {/* Testimonials Section */}
       <BrandPerspective />
-
-      {/* CTA Section */}
       <CTA />
     </div>
   );

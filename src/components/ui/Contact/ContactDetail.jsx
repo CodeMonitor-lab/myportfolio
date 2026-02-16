@@ -49,10 +49,6 @@ const ContactDetail = () => {
     >
       {/* Heading */}
       <div>
-        <h2 className="text-3xl font-semibold tracking-tight text-white mb-8">
-          Contact Details
-        </h2>
-
         {/* Cards */}
         <div className="space-y-6">
           {details.map((item, index) => {
@@ -63,36 +59,56 @@ const ContactDetail = () => {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ y: -4 }}
-                className="group flex items-start gap-4 p-5
-                           rounded-2xl border border-slate-800
-                           bg-slate-900/60 backdrop-blur-xl
-                           transition-all duration-300
-                           hover:border-indigo-500
-                           hover:shadow-lg hover:shadow-indigo-500/10"
+                className="
+                  group flex items-start gap-4 p-5 rounded-2xl
+                  border transition-all duration-300
+                  
+                  bg-white border-slate-200 shadow-sm
+                  dark:bg-slate-900/60 dark:border-slate-800
+                  dark:backdrop-blur-xl
+
+                  hover:border-indigo-500
+                  dark:hover:border-indigo-500
+                  hover:shadow-lg hover:shadow-indigo-500/10
+                "
               >
                 {/* Icon */}
-                <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-slate-800/60 group-hover:bg-indigo-500/10 transition-colors duration-300">
+                <div className="
+                  flex items-center justify-center w-10 h-10 rounded-xl
+                  bg-slate-100 dark:bg-slate-800/60
+                  group-hover:bg-indigo-500/10
+                  transition-colors duration-300
+                ">
                   <Icon
                     size={18}
-                    className="text-slate-400 group-hover:text-indigo-400 transition-colors duration-300"
+                    className="
+                      text-slate-500 dark:text-slate-400
+                      group-hover:text-indigo-500 dark:group-hover:text-indigo-400
+                      transition-colors duration-300
+                    "
                   />
                 </div>
 
                 {/* Content */}
                 <div className="space-y-1">
-                  <h3 className="text-sm font-semibold text-white">
+                  <h3 className="text-sm font-semibold text-slate-900 dark:text-white">
                     {item.title}
                   </h3>
 
                   {item.link ? (
                     <a
                       href={item.link}
-                      className="text-sm text-slate-400 hover:text-indigo-400 transition-colors duration-300"
+                      className="
+                        text-sm
+                        text-slate-600 dark:text-slate-400
+                        hover:text-indigo-600 dark:hover:text-indigo-400
+                        transition-colors duration-300
+                      "
                     >
                       {item.content}
                     </a>
                   ) : (
-                    <p className="text-sm text-slate-400">
+                    <p className="text-sm text-slate-600 dark:text-slate-400">
                       {item.content}
                     </p>
                   )}
