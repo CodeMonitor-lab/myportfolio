@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
           transition-colors duration-300
         `}
       >
+        <Analytics />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -43,9 +45,7 @@ export default function RootLayout({ children }) {
         >
           <Header />
 
-          <main className="flex-1">
-            {children}
-          </main>
+          <main className="flex-1">{children}</main>
 
           <Footer />
         </ThemeProvider>
