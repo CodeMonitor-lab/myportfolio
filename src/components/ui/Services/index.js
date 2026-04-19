@@ -1,6 +1,0 @@
-export {default as ServicesHero } from '@/components/ui/Services/ServicesHero'
-export {default as WorkingProcess } from '@/components/ui/Services/WorkingProcess'
-export {default as OurServices } from '@/components/ui/Services/OurServices'
-export {default as FrequentlyAskQuestion } from '@/components/ui/Services/FrequentlyAskQuestion'
-export {default as ClientExperience } from '@/components/ui/Services/ClientExperience'
-export {default as CTAForService } from '@/components/ui/Services/CTAForService'

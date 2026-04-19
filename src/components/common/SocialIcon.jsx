@@ -6,43 +6,21 @@ import { Github, Facebook, Instagram, Linkedin } from "lucide-react";
 const SocialIcon = () => {
   return (
     <ul className="flex gap-5">
-      
-      <li>
-        <Link href="#" className="group">
-          <Instagram
-            size={28}
-            className="text-rose-600 transition-transform duration-300 group-hover:scale-110"
-          />
-        </Link>
-      </li>
-
-      <li>
-        <Link href="#" className="group">
-          <Github
-            size={28}
-            className="text-black transition-transform duration-300 group-hover:scale-110"
-          />
-        </Link>
-      </li>
-
-      <li>
-        <Link href="#" className="group">
-          <Facebook
-            size={28}
-            className="text-blue-600 transition-transform duration-300 group-hover:scale-110"
-          />
-        </Link>
-      </li>
-
-      <li>
-        <Link href="#" className="group">
-          <Linkedin
-            size={28}
-            className="text-blue-700 transition-transform duration-300 group-hover:scale-110"
-          />
-        </Link>
-      </li>
-
+      {[Instagram, Github, Facebook, Linkedin].map((Icon, i) => (
+        <li key={i}>
+          <Link href="#" className="group">
+            <Icon
+              size={18}
+              className="text-green-400 
+              drop-shadow-[0_0_6px_#00ff88] 
+              hover:text-white 
+              hover:drop-shadow-[0_0_10px_#00ff88] 
+              transition-all duration-300 
+              group-hover:scale-110"
+            />
+          </Link>
+        </li>
+      ))}
     </ul>
   );
 };
