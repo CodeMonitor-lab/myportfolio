@@ -6,7 +6,7 @@ export default function Home() {
   const [time, setTime] = useState('');
   const [typedText, setTypedText] = useState('');
 
-  const fullText = "NITESH KUMAR RAM";
+  const fullText = "NITESH";
 
   // Clock
   useEffect(() => {
