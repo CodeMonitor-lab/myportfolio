@@ -2,9 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
-import Header from "@/components/ui/Header"; 
-import Navbar from "@/components/ui/Navbar";
-import Footer from "@/components/ui/Footer";
+
+import { Navbar, Footer, Taskbar } from "@/components/layout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,39 +16,59 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "My Portfolio",
+  title: "CodeMonitor-lab - Modern Cyberpunk Portfolio ",
   description: "Modern Next.js Portfolio",
+  manifest: "/manifest.webmanifest",
+  icons: {
+    icon: "/favicon_2.ico",
+    shortcut: "/favicon_2.ico",
+    apple: "/favicon_2.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className="scroll-smooth"
+    >
       <body
         className={`
-          ${geistSans.variable} 
-          ${geistMono.variable} 
-          antialiased 
-          min-h-screen 
-          flex 
+          ${geistSans.variable}
+          ${geistMono.variable}
+          antialiased
+          min-h-screen
+          flex
           flex-col
           bg-white text-slate-900
           dark:bg-slate-950 dark:text-slate-100
           transition-colors duration-300
         `}
       >
+        {/* Analytics */}
         <Analytics />
+
+        {/* Theme Provider */}
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          {/* <Header /> */}
+          {/* Navbar */}
           <Navbar />
 
-          <main className="flex-1">{children}</main>
+          {/* Main Content */}
+          <main className="flex-1 scroll-pt-24">
+            {children}
+          </main>
 
+          {/* Footer */}
           <Footer />
+
+          {/* Taskbar */}
+          <Taskbar />
         </ThemeProvider>
       </body>
     </html>
