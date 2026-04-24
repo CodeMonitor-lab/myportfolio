@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 import { Navbar, Footer, Taskbar } from "@/components/layout";
+import { Subscribe } from "@/components/common";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -68,7 +69,11 @@ export default function RootLayout({ children }) {
           <Footer />
 
           {/* Taskbar */}
+          <div className="relative">
+
           <Taskbar />
+          <Subscribe />
+          </div>
         </ThemeProvider>
       </body>
     </html>

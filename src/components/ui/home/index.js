@@ -1,0 +1,10 @@
+export { default as Hero } from "./Hero";
+export { default as About } from "./About";
+export { default as Stats } from "./Stats";
+export { default as Projects } from "./Projects";
+export { default as NetworkMap } from "./NetworkMap";
+export { default as HologramProfile } from "./HologramProfile";
+export { default as AIConsole } from "./AIConsole";
+export { default as Timeline } from "./Timeline";
+export { default as Terminal } from "./Terminal";
+export { default as TypingWord } from "./TypingWord";

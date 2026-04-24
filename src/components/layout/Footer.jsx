@@ -1,8 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Menu, CirclePower } from "lucide-react";
-import SocialIcon from "@/components/common/SocialIcon";
+import { Menu, CirclePower,Download } from "lucide-react";
 
 const Footer = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -43,10 +42,10 @@ const Footer = () => {
         {/* Start Button */}
         <button
           onClick={() => setMenuOpen((prev) => !prev)}
-          className="flex items-center gap-2 group"
+          className="flex items-center gap-4 border p-1 rounded-full group"
         >
           <CirclePower
-            size={18}
+            size={20}
             className={`
               transition-all duration-300
               ${
@@ -56,18 +55,17 @@ const Footer = () => {
               }
             `}
           />
-          <span className="hidden sm:inline group-hover:text-white transition">
-            menu
-          </span>
+          {/* <span className="hidden sm:inline group-hover:text-white transition">
+          Start
+          </span> */}
         </button>
 
         {/* Center (future apps) */}
         <div></div>
 
         {/* System Tray */}
-        <div className="flex items-center gap-4">
-          <SocialIcon />
-          <a href="#">Download CV</a>
+        <div className="flex gap-1 border p-1 items-center cursor-pointer  rounded-full drop-shadow-[0_0_6px_#00ff8822]">
+          <Download size={16} />
         </div>
       </footer>
     </>

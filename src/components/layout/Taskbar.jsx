@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Search from "./Search";
 import { Cpu, Clock3 } from "lucide-react";
+import { Subscribe } from "@/components/common";
 
 const Taskbar = () => {
   const [time, setTime] = useState("");
@@ -27,7 +28,7 @@ const Taskbar = () => {
 
   return (
     <footer
-      className="absolute bottom-0 left-0 z-50 w-full 
+    className="absolute bottom-0 left-0 z-50 w-full 
       flex items-center justify-between gap-4
       px-4 md:px-6 py-2
       border-t border-cyan-500/20

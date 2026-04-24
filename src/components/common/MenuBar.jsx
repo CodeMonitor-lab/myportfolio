@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import navLinks from "@/json/navlinks.json";
+import navLinks from "@/data/navlinks.js";
 
 export default function MenuBar() {
   const pathname = usePathname();

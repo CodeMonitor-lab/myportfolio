@@ -1,4 +1,4 @@
-import SpaceNotFound from "@/components/ui/SpaceNotFound";
+import SpaceNotFound from "@/components/ui/error/SpaceNotFound";
 
 export default function NotFound() {
   return <SpaceNotFound />;
