@@ -31,12 +31,17 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  const isActive = (link) => {
+    if (pathname === "/" && link.href === "/") return true;
+    return pathname === link.href;
+  };
+
   return (
     <motion.header
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="sticky top-0 z-50 w-full flex items-center justify-between px-4 md:px-6 py-3
+      className="sticky top-0 z-[100] w-full flex items-center justify-between px-4 md:px-6 py-3
       bg-black/70 backdrop-blur-xl border-b border-cyan-500/20
       shadow-[0_0_25px_#00ffff22] font-mono"
     >
@@ -63,6 +68,7 @@ const Navbar = () => {
           <NavItem
             key={link.to}
             label={link.text}
+            active={isActive(link)}
             onClick={() => handleNavigation(link)}
           />
         ))}
@@ -96,6 +102,7 @@ const Navbar = () => {
               <NavItem
                 key={link.to}
                 label={link.text}
+                active={isActive(link)}
                 onClick={() => handleNavigation(link)}
               />
             ))}
@@ -106,24 +113,31 @@ const Navbar = () => {
   );
 };
 
-const NavItem = ({ label, onClick }) => {
+const NavItem = ({ label, onClick, active }) => {
   return (
-    <button onClick={onClick} className="relative group text-cyan-300">
-      <span className="group-hover:text-white transition duration-300">
+    <button onClick={onClick} className="relative group">
+      <span
+        className={`transition duration-300 ${
+          active
+            ? "text-white drop-shadow-[0_0_8px_#00ffff]"
+            : "text-cyan-300 group-hover:text-white"
+        }`}
+      >
         {label}
       </span>
 
       {/* underline */}
       <span
-        className="absolute left-0 -bottom-1 w-full h-[2px]
-        bg-cyan-400 scale-x-0 group-hover:scale-x-100
-        origin-left transition-transform duration-300"
+        className={`absolute left-0 -bottom-1 w-full h-[2px] bg-cyan-400 origin-left transition-transform duration-300 ${
+          active ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+        }`}
       />
 
       {/* glow */}
       <span
-        className="absolute inset-0 opacity-0 group-hover:opacity-100
-        blur-md bg-cyan-400/20 transition duration-300"
+        className={`absolute inset-0 blur-md bg-cyan-400/20 transition duration-300 ${
+          active ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+        }`}
       />
     </button>
   );

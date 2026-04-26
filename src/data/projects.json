@@ -1,0 +1,34 @@
+[
+    {
+      "slug": "saas-product",
+      "title": "SaaS Product",
+      "image": "/projects/project-1.png",
+      "url": "https://brand-service-work-space-web-8fx-co.vercel.app/",
+      "desc": "A modern SaaS platform with premium UI and workspace features.",
+      "content": "This SaaS product helps users manage workspace and services efficiently."
+    },
+    {
+      "slug": "blogs-for-everyone",
+      "title": "Blogs For Everyone",
+      "image": "/projects/project-2.png",
+      "url": "https://simple-blog-app-web.vercel.app/",
+      "desc": "A blog platform for sharing ideas and stories.",
+      "content": "Users can create, edit and publish blogs easily."
+    },
+    {
+      "slug": "brand-personal-portfolio",
+      "title": "Brand Personal Portfolio",
+      "image": "/projects/project-3.png",
+      "url": "https://www.codemonitor.online/",
+      "desc": "A sleek personal portfolio website.",
+      "content": "A personal branding website with projects and skills."
+    },
+    {
+      "slug": "marketing-adsense-site",
+      "title": "Marketing Adsense Site",
+      "image": "/projects/project-4.png",
+      "url": "https://brand-service-work-space-web-8fx-ma.vercel.app/",
+      "desc": "Marketing-focused website optimized for ads and conversions.",
+      "content": "An Adsense-ready site focused on traffic and monetization."
+    }
+  ]

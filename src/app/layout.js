@@ -17,23 +17,59 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "CodeMonitor-lab - Modern Cyberpunk Portfolio ",
-  description: "Modern Next.js Portfolio",
-  manifest: "/manifest.webmanifest",
+  title: {
+    default: "CodeMonitor Lab - Cyberpunk Developer Portfolio",
+    template: "%s | CodeMonitor Lab",
+  },
+
+  description:
+    "CodeMonitor Lab is a modern developer portfolio and cyberpunk-inspired platform built with Next.js. Showcasing projects, UI experiments, and performance-focused web development.",
+
+  keywords: [
+    "Next.js portfolio",
+    "developer portfolio",
+    "cyberpunk UI",
+    "React developer",
+    "CodeMonitor",
+    "web performance",
+  ],
+
+  metadataBase: new URL("https://codemonitor.online"),
+
+  openGraph: {
+    title: "CodeMonitor Lab - Cyberpunk Developer Portfolio",
+    description:
+      "Modern Next.js developer portfolio showcasing projects and UI experiments.",
+    url: "https://codemonitor.online",
+    siteName: "CodeMonitor Lab",
+    type: "website",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  alternates: {
+    canonical: "https://codemonitor.online",
+  },
+
   icons: {
     icon: "/favicon_2.ico",
     shortcut: "/favicon_2.ico",
     apple: "/favicon_2.ico",
   },
+
+  manifest: "/manifest.webmanifest",
+
+  verification: {
+    google: "lTAu0Zu1DtcB2oaP3pASmoDlHXtUE5xXbIp8pu0pcDQ",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning
-      className="scroll-smooth"
-    >
+    <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <body
         className={`
           ${geistSans.variable}
@@ -47,10 +83,6 @@ export default function RootLayout({ children }) {
           transition-colors duration-300
         `}
       >
-        {/* Analytics */}
-        <Analytics />
-
-        {/* Theme Provider */}
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -68,12 +100,14 @@ export default function RootLayout({ children }) {
           {/* Footer */}
           <Footer />
 
-          {/* Taskbar */}
+          {/* UI Components */}
           <div className="relative">
-
-          <Taskbar />
-          <Subscribe />
+            <Taskbar />
+            <Subscribe />
           </div>
+
+          {/* Analytics (placed at end for better performance) */}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>

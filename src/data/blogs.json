@@ -1,0 +1,26 @@
+[
+    {
+      "slug": "how-to-build-a-saas-product",
+      "title": "How to Build a SaaS Product",
+      "desc": "A complete guide to designing and launching SaaS platforms.",
+      "content": "This article explains the architecture, authentication, billing, and deployment process for SaaS products.",
+      "date": "Apr 2026",
+      "category": "SaaS"
+    },
+    {
+      "slug": "seo-tips-for-bloggers",
+      "title": "SEO Tips for Bloggers",
+      "desc": "Improve rankings and traffic with smart SEO strategies.",
+      "content": "Learn keyword research, on-page SEO, backlinks, and content optimization strategies.",
+      "date": "Mar 2026",
+      "category": "SEO"
+    },
+    {
+      "slug": "google-adsense-approval-guide",
+      "title": "Google Adsense Approval Guide",
+      "desc": "Step-by-step guide to monetize your content website.",
+      "content": "Everything about Adsense approval, traffic requirements, and monetization.",
+      "date": "Feb 2026",
+      "category": "Marketing"
+    }
+  ]

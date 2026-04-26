@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, use } from "react";
 import {
   PlayHeader,
   PlayContent,
@@ -8,26 +8,20 @@ import {
 } from "@/components/ui/playground";
 
 export default function PlaygroundSlugPage({ params }) {
-  const slug = params?.slug ?? "";
+  const { slug } = use(params); // ✅ FIX HERE
+
   const [open, setOpen] = useState(false);
 
   return (
     <div className="flex min-h-screen bg-black text-cyan-400 font-mono">
-      {/* Sidebar */}
       <PlaygroundSidebar
         currentSlug={slug}
         open={open}
         setOpen={setOpen}
       />
 
-      {/* Main */}
       <div className="flex-1 flex flex-col">
-        <PlayHeader
-          slug={slug}
-          open={open}
-          setOpen={setOpen}
-        />
-
+        <PlayHeader slug={slug} open={open} setOpen={setOpen} />
         <PlayContent slug={slug} />
       </div>
     </div>

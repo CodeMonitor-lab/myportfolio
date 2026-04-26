@@ -1,14 +1,7 @@
 import React from "react";
+import items from "@/data/projects.json";
 
 const Projects = () => {
-  const items = [
-    "Neon UI Engine",
-    "AI Command Panel",
-    "Cyber Grid Store",
-    "Motion Portfolio OS",
-    "Neural Chat System",
-    "Hologram Dashboard",
-  ];
 
   return (
     <section className="py-24 px-6 bg-black">
@@ -17,14 +10,14 @@ const Projects = () => {
       </h2>
 
       <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        {items.map((p, i) => (
+        {items.map((item, i) => (
           <div
             key={i}
             className="p-6 rounded-2xl border border-cyan-500/30 bg-black/60 hover:shadow-[0_0_25px_#00ffff22] transition"
           >
-            <h3 className="text-pink-300 tracking-widest mb-2">{p}</h3>
+            <h3 className="text-pink-300 tracking-widest mb-2">{item.title}</h3>
             <p className="text-gray-500 text-xs">
-              Cyber module deployed in neural grid architecture.
+          {item.desc}
             </p>
           </div>
         ))}

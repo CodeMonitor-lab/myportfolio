@@ -1,84 +1,54 @@
+import Link from "next/link";
 import PageTransition from "@/components/common/PageTransition";
+import { Terminal } from "lucide-react";
+import blogs from "@/data/blogs.json";
 
 export default function BlogPage() {
-  const blogs = [
-    {
-      title: "Building a Futuristic Portfolio",
-      desc: "How I designed and developed a cyberpunk-inspired personal portfolio using Next.js and Tailwind CSS.",
-      date: "Apr 2026",
-      category: "Design",
-    },
-    {
-      title: "Mastering Framer Motion",
-      desc: "Learn how to add smooth animations and page transitions in React applications.",
-      date: "Mar 2026",
-      category: "Animation",
-    },
-    {
-      title: "Next.js Performance Tips",
-      desc: "Best practices to optimize performance, SEO, and loading speed in modern web apps.",
-      date: "Feb 2026",
-      category: "Development",
-    },
-    {
-      title: "Creating Cyberpunk UI",
-      desc: "Step-by-step guide to designing glowing neon interfaces with Tailwind CSS.",
-      date: "Jan 2026",
-      category: "UI/UX",
-    },
-    {
-      title: "Full Stack App Architecture",
-      desc: "Scalable architecture for MERN and Next.js applications.",
-      date: "Dec 2025",
-      category: "Backend",
-    },
-    {
-      title: "Deploying Apps Easily",
-      desc: "Deploy your Next.js apps seamlessly using Vercel and Docker.",
-      date: "Nov 2025",
-      category: "DevOps",
-    },
-  ];
-
   return (
     <PageTransition>
       <main className="min-w-full min-h-screen bg-black text-cyan-400 font-mono overflow-hidden relative snap-start shrink-0">
-        {/* Hero */}
-        <section className="relative px-6 py-20 text-center border-b border-cyan-500/20">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-widest text-cyan-300">
-            BLOG SYSTEM
-          </h1>
-          <p className="text-zinc-400 mt-4 max-w-2xl mx-auto">
-            Explore insights, tutorials, and futuristic ideas about design,
-            development, and digital experiences.
-          </p>
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(0,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,255,0.04)_1px,transparent_1px)] bg-[size:50px_50px]" />
+
+        <section className="relative z-10 px-6 py-20 text-center border-b border-cyan-500/20">
+          <div className="inline-flex items-center gap-3 border border-cyan-500/30 bg-zinc-900/70 rounded-full px-5 py-2">
+            <Terminal className="w-4 h-4 text-cyan-400" />
+            <p className="text-green-400 text-xs sm:text-sm">
+              root@portfolio:~$ open ./blogs
+            </p>
+          </div>
+
         </section>
 
-        {/* Blog Grid */}
-        <section className="px-6 py-20">
+        <section className="relative z-10 px-6 py-20">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogs.map((blog) => (
-              <div
-                key={blog.title}
-                className="group p-6 rounded-2xl bg-zinc-900/80 border border-cyan-500/20 hover:border-cyan-400 hover:scale-[1.03] transition-all duration-300 shadow-[0_0_20px_#00ffff11]"
+            {blogs.map((blog, i) => (
+              <Link
+                key={blog.slug}
+                href={`/blog/${blog.slug}`}
+                className="group relative overflow-hidden p-6 rounded-3xl bg-zinc-900/70 border border-cyan-500/20 hover:border-pink-400 transition-all duration-500"
               >
-                <div className="flex justify-between items-center mb-4">
-                  <span className="text-xs text-pink-400">{blog.category}</span>
-                  <span className="text-xs text-zinc-500">{blog.date}</span>
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="w-3 h-3 rounded-full bg-red-500"></span>
+                  <span className="w-3 h-3 rounded-full bg-yellow-500"></span>
+                  <span className="w-3 h-3 rounded-full bg-green-500"></span>
                 </div>
 
-                <h2 className="text-2xl font-semibold text-white group-hover:text-cyan-300 transition">
-                  {blog.title}
-                </h2>
-
-                <p className="text-zinc-400 mt-3 text-sm leading-relaxed">
-                  {blog.desc}
+                <p className="text-green-400 text-xs">
+                  root@blog:~$ open article_{i + 1}
                 </p>
 
-                <button className="mt-6 text-cyan-400 hover:text-cyan-300 text-sm">
-                  Read More →
-                </button>
-              </div>
+                <div className="mt-3 space-y-3">
+                  <p className="text-cyan-400 text-xs">├── title:</p>
+                  <h2 className="text-lg font-semibold text-white pl-4 border-l border-cyan-500/30">
+                    {blog.title}
+                  </h2>
+
+                  <p className="text-cyan-400 text-xs">├── description:</p>
+                  <p className="text-zinc-400 text-sm pl-4 border-l border-pink-500/20">
+                    {blog.desc}
+                  </p>
+                </div>
+              </Link>
             ))}
           </div>
         </section>
