@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { Analytics } from "@vercel/analytics/next";
+import Script from "next/script";
 import "./globals.css";
 
 import { Navbar, Footer, Taskbar } from "@/components/layout";
@@ -83,6 +84,20 @@ export default function RootLayout({ children }) {
           transition-colors duration-300
         `}
       >
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-SXKX0WG59T"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SXKX0WG59T');
+          `}
+        </Script>
+
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -106,7 +121,7 @@ export default function RootLayout({ children }) {
             <Subscribe />
           </div>
 
-          {/* Analytics (placed at end for better performance) */}
+          {/* Vercel Analytics */}
           <Analytics />
         </ThemeProvider>
       </body>
